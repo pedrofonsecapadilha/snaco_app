@@ -1,8 +1,10 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-snaco">
     <div class="container-fluid">
         
-        <%= link_to "#", class: "navbar-brand" do %>
-            <%= image_tag 'Logo_sem_fundo_png.png' %>
+        <div></div>
+
+        <%= link_to "#", class: "navbar-brand " do %>
+            <%= image_tag 'logo.png' %>
         <% end %>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,11 +14,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item dropdown">
-                    <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+                    <%= image_tag 'default_avatar.png', class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <%= link_to "Action", "#", class: "dropdown-item" %>
-                        <%= link_to "Another action", "#", class: "dropdown-item" %>
-                        <%= link_to "Log out", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
+                        <%= link_to "Perfil", "#", class: "dropdown-item" %>
+                        <%= link_to "Sair", "#", class: "dropdown-item" %>
                     </div>
                 </li>
             </ul>
