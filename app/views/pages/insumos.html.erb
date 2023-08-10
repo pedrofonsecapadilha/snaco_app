@@ -12,8 +12,8 @@
             </button>
             <div class="collapse" id="collapseFornecedores">
                 <div class="card align-items-end p-0 border-0 card-bg" style="background-color: rgba(255, 0, 0, 0)";>
-                    <button type="button" class="btn btn-primary col-8 mb-2">Insumos</button>
-                    <button type="button" class="btn btn-primary col-8 mb-2">Mão de Obra</button>
+                    <button type="button" class="btn btn-primary col-9 mb-2">Insumos</button>
+                    <button type="button" class="btn btn-primary col-9 mb-2">Mão de Obra</button>
                 </div>
             </div>
             <button type="button" class="btn btn-primary">Produtos</button>
@@ -21,56 +21,169 @@
         </div>
     </div>
 
-    <%# Cards %>
+    <%# Main %>
     <div class='container py-3'>
+        <h1 class='mb-2'>Insumos</h1>
+        <button type="button" class="btn btn-success my-2">NOVO INSUMO</button>
 
-        <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
+        <%# Search bar %>
+        <%= render "shared/searchbar" %>
+
+        <%# Cards %>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/621712648/pt/foto/green-lectuce-produce-green-vegetable.jpg?s=2048x2048&w=is&k=20&c=JVntYJp6FfVvrPZhJwQphNTftWTedLGSl48iiV1X4OU=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Alface</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 5,18<br>
+                            <b>Quantidade:</b> 1,00 kg<br>
+                            <b>Custo Esp.:</b> 5,18 R$/kg<br>
+                            <b>Fornecedor:</b><br>Supermercado Carrossel
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlZXNlJTIwbXVzc2FyZWxhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mussarela</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 80,00<br>
+                            <b>Quantidade:</b> 2,00 kg<br>
+                            <b>Custo Esp.:</b> 40,00 R$/kg<br>
+                            <b>Fornecedor:</b><br>Fazenda Registro
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/836486634/pt/foto/little-red-cherry-tomatoes-nature-background.jpg?s=1024x1024&w=is&k=20&c=p-O_IE23ZRc02O2qIuQwLs-StCEIG63m3z1_gWb3qsk=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomate</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 4,74<br>
+                            <b>Quantidade:</b> 1,20 kg<br>
+                            <b>Custo Esp.:</b> 3,95 R$/kg<br>
+                            <b>Fornecedor:</b><br>Supermercado Carrossel
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">                
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/148229297/pt/foto/grilling-hamb%C3%BArgueres.webp?b=1&s=170667a&w=0&k=20&c=3RLAB456NpIPwJXeOwFAgjRTZJmIbN1hCCdC_ZNGXFM=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Carne</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 260,00<br>
+                            <b>Quantidade:</b> 10,00 kg<br>
+                            <b>Custo Esp.:</b> 26,00 R$/kg<br>
+                            <b>Fornecedor:</b><br>Açougue Tigrinho
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">                
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlZXNlJTIwbXVzc2FyZWxhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bacon</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 77,91<br>
+                            <b>Quantidade:</b> 2,00 kg<br>
+                            <b>Custo Esp.:</b> 38,96 R$/kg<br>
+                            <b>Fornecedor:</b><br>Mercado do Léo
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">                
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/1173374630/pt/foto/blank-opened-and-closed-craft-burger-box-mockup-side-view.webp?b=1&s=170667a&w=0&k=20&c=jSlRtQGLnn2rym2W-hNj-efbECbRZaUMVQFP5krxXyU=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Embalagem de Hamburguer</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 37,50 <br>
+                            <b>Quantidade:</b> 50 un.<br>
+                            <b>Custo Esp.:</b> 0,75 R$/un.<br>
+                            <b>Fornecedor:</b><br>Bel Embalagens
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">                
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/545800796/pt/foto/latas-de-bebidas.webp?b=1&s=170667a&w=0&k=20&c=kQmRvYZ-07rSEIawhneaDfpB4NZCAMM9UmKf0ZQJRvo=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coca-Cola Lata</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 40,00 <br>
+                            <b>Quantidade:</b> 12,00 un.<br>
+                            <b>Custo Esp.:</b> 3,33 R$/un.<br>
+                            <b>Fornecedor:</b><br>Femsa
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">                
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/155130498/pt/foto/bloco-de-queijo-cheddar.webp?b=1&s=170667a&w=0&k=20&c=Z6jhxbwQ8hOsDE7uojNWzs0X3psRPjYl0uJ1HOmh8XQ=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheddar</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Valor:</b> R$ 133,50 <br>
+                            <b>Quantidade:</b> 3,00 kg<br>
+                            <b>Custo Esp.:</b> 44,50 R$/kg<br>
+                            <b>Fornecedor:</b><br>Ecila
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
 
-        <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
-            </div>
-        </div>
-
-        <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
-            </div>
-        </div>
-
-        <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
-            </div>
-        </div>
-    
-        <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
-            </div>
-        </div>    
-
-        <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-                <h2>Product name</h2>
-                <p>Product description with <strong>relevant info</strong> only.</p>
-            </div>
-        </div>    
     </div>
-
 </div>
