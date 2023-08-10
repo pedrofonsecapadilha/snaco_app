@@ -6,26 +6,19 @@
         <%= image_tag 'logo_rest.png', class: "d-grid gap-2 col-10 mx-auto mb-3" %>
 
         <div class="d-grid gap-2 col-10 mx-auto">
-            <button type="button" class="btn btn-primary">DASHBOARD</button>
-            <button type="button" class="btn btn-primary">FORNECEDORES E COLABORADORES</button>
-            <button type="button" class="btn btn-primary">PRODUTOS</button>
-            <button type="button" class="btn btn-primary">TABELA DE PREÇOS</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-
-            <p class="d-inline-flex gap-1">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Fornecedores
-                </button>
-            </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    <button type="button" class="btn btn-primary">Insumos</button>
-                    <button type="button" class="btn btn-primary">Mão de Obra</button>
+            <button type="button" class="btn btn-primary">Dashborad</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFornecedores" aria-expanded="false" aria-controls="collapseFornecedores">
+                Fornecedores
+            </button>
+            <div class="collapse" id="collapseFornecedores">
+                <div class="card align-items-end p-0 border-0 card-bg" style="background-color: rgba(255, 0, 0, 0)";>
+                    <button type="button" class="btn btn-primary col-8 mb-2">Insumos</button>
+                    <button type="button" class="btn btn-primary col-8 mb-2">Mão de Obra</button>
                 </div>
-            </div>            
+            </div>
+            <button type="button" class="btn btn-primary">Produtos</button>
+            <button type="button" class="btn btn-primary">Tabela de Preços</button>
         </div>
-
-
     </div>
 
     <%# Cards %>
