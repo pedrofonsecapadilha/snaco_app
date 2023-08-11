@@ -7,4 +7,7 @@ class PagesController < ApplicationController
   
   def colaboradores
   end
+
+  def produtos
+  end  
 end

@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "/home", to: "pages#home", as: "home"
   get "/insumos", to: "pages#insumos", as: "insumos"
   get "/colaboradores", to: "pages#colaboradores", as: "colaboradores"
+  get "/produtos", to: "pages#produtos", as: "produtos"
 end
