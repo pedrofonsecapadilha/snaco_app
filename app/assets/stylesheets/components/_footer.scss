@@ -1,0 +1,29 @@
+.footer {
+    background: white;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 0px 30px;
+    color: rgba(0,0,0,0.8);
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: $snaco2;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+.footer-links a:hover {
+    color: $snaco1;
+    opacity: 1;
+}
+
+.footer-brand img {
+    width: 120px;
+}
