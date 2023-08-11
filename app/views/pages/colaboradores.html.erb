@@ -1,0 +1,124 @@
+<div class="main-container">
+
+    <%# sidebar %>
+    <div class='sidebar'>
+
+        <%= image_tag 'logo_rest.png', class: "d-grid gap-2 col-10 mx-auto mb-3" %>
+
+        <div class="d-grid gap-2 col-10 mx-auto">
+            <button type="button" class="btn btn-primary">Dashborad</button>
+            <button type="button" class="btn btn-primary border border-white border-3">Fornecedores</button>
+                <div class="card align-items-end p-0 border-0 card-bg" style="background-color: rgba(255, 0, 0, 0)";>
+                    <button type="button" class="btn btn-primary col-10 mb-2">Insumos</button>
+                    <button type="button" class="btn btn-primary col-10 mb-2 border border-white border-3">Colaboradores</button>
+                </div>
+            <%# <button class="btn btn-primary border border-white border-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFornecedores" aria-expanded="false" aria-controls="collapseFornecedores">
+                Fornecedores
+            </button>
+            <div class="collapse" id="collapseFornecedores">
+                <div class="card align-items-end p-0 border-0 card-bg" style="background-color: rgba(255, 0, 0, 0)";>
+                    <button type="button" class="btn btn-primary col-10 mb-2 border border-white border-3">Insumos</button>
+                    <button type="button" class="btn btn-primary col-10 mb-2">Colaboradores</button>
+                </div>
+            </div> %>
+            <button type="button" class="btn btn-primary">Produtos</button>
+            <button type="button" class="btn btn-primary">Tabela de Preços</button>
+        </div>
+    </div>
+
+    <%# Main %>
+    <div class='container py-3'>
+        <div class='container bg-white shadow p-2 mb-3 bg-body-tertiary rounded'>
+            <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                <h1 class='mb-2'>Colaboradores</h1>
+            </div>
+            <div class='d-grid gap-2 d-md-flex justify-content-md-right'>
+                <button type="button" class="btn btn-success my-2">NOVO COLABORADOR</button>
+                <button type="button" class="btn btn-dark my-2">HISTÓRICO DE COLABORADORES</button>
+            </div>
+            <%# Search bar %>
+            <%= render "shared/searchbar" %>
+        </div>
+
+        <%# Cards %>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/1281232665/pt/foto/young-caucasian-male-courier-wearing-protective-face-mask.jpg?s=612x612&w=0&k=20&c=H9aRko6H8kWXGLYD287Q0_iwD1o_3xwEmnTsOwXYS_A=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruan</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Função:</b> Motoboy<br>
+                            <b>Contratação:</b> Freelancer<br>
+                            <b>Valor:</b> R$ 95,00 /dia<br>
+                            <b>Custo Esp.:</b> 11,87 R$/h<br>
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/1268305464/pt/foto/portrait-of-a-confident-senior-baker-standing-in-a-commercial-kitchen-with-arms-crossed.webp?b=1&s=170667a&w=0&k=20&c=pv6gaCaxA6U3Ia1AAsOf9Ky4dSRbA1iRjkm3kRPOlB4=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Thaís</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Função:</b> Cozinheira<br>
+                            <b>Contratação:</b> Freelancer<br>
+                            <b>Valor:</b> R$ 150,00 /dia<br>
+                            <b>Custo Esp.:</b> 18,75 R$/h<br>
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/468874388/pt/foto/homem-motociclista.jpg?s=612x612&w=0&k=20&c=WeXte08sSI1DzKpXN2jg0tg33e7aImFwR7VFSQc2JQY=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Caio</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Função:</b> Motoboy<br>
+                            <b>Contratação:</b> Freelancer<br>
+                            <b>Valor:</b> R$ 105,00 /dia<br>
+                            <b>Custo Esp.:</b> 13,12 R$/h<br>
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/1259095163/pt/foto/happy-businesswoman-using-mobile-and-laptop-while-working-at-home.webp?b=1&s=170667a&w=0&k=20&c=y4d2gchgJLVcG1av3lK4e-7v4CX4K9ubmkMFMVglhl4=" class="object-fit-scale" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Carolina</h5>
+                        <p>
+                            <b>Data:</b> 10/08/2023<br>
+                            <b>Função:</b> Atendente<br>
+                            <b>Contratação:</b> CLT<br>
+                            <b>Valor:</b> R$ 1.500,00 /mês<br>
+                            <b>Custo Esp.:</b> 8,52 R$/h<br>
+                        </p>
+                        <div class='d-grid gap-2 d-md-flex justify-content-md-center'>
+                            <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Deletar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
